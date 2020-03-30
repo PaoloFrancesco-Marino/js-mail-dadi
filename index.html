@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email JS</title>
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -14,11 +20,16 @@
     <section class="container">
         <div class="wrapper">
             <div class="box">
-                <input id="email" type="email" placeholder="email address">
-                <h2 id="autenticazione"></h2>
+                <h2 class="title">Email Login</h2>
+                <div class="box-email">
+                    <input id="email" type="email" placeholder="email address ">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h4 id="autenticazione"></h4>
+                <h5><a href="#">Forgot Email?</a></h5>
                 <button id="login">Login</button>
         
-                <a href="dice.html" class="btn">Vai al gioco dei Dadi</a>
+                <a id="button-dice" href="dice.html" class="btn hidden">Vai al gioco dei Dadi</a>
             </div>     
         </div>
     </section>

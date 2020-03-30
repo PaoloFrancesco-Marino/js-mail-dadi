@@ -11,6 +11,7 @@ console.table(email);
 
 var nome = document.getElementById('email').value;
 var login = document.getElementById('login');
+var buttonDice = document.getElementById('button-dice');
 var message;
 
 
@@ -34,14 +35,16 @@ login.addEventListener('click',
             // utente trovato
             console.log('email trovata');
             message = 'Email trovata'
+            // mostra button gioco dei dadi
+            buttonDice.className = buttonDice.classList =  + ' show' + ' btn';
         } else {
             // utente non trovato
             console.log('email non trovata');
-            message = 'Eamil non trovata'
+            message = 'Email non trovata'
         }
 
         // inserisco in html
-        document.getElementById('autenticazione') .innerHTML = message;
+        document.getElementById('autenticazione') .innerHTML = message;  
     }
 )
 
