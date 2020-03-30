@@ -12,14 +12,30 @@ console.log(computerNumber);
 
 // 2. Stabilire il vincitore, in base a chi fa il punteggio più alto
 
-var vincita;
+var dadi = document.getElementById('dadi');
 
-if (vincita = userNumber > computerNumber) {
-    console.log('Ha vinto il Giocatore');
+dadi.addEventListener('click',
+    function() {
+        var result = 'tira i dadi';
 
-} else if (vincita = userNumber < computerNumber) {
-    console.log('Ha vinto il Computer');
+        if (userNumber > computerNumber) {
+            console.log('Ha vinto il Giocatore');
+            result = 'Ha vinto il Giocatore';
+        
+        } else if (userNumber < computerNumber) {
+            console.log('Ha vinto il Computer');
+            result = 'Ha vinto il Computer';
+        
+        } else {
+            console.log('Pareggio');
+            result = 'Pareggio';
+        }
 
-} else {
-    console.log('Pareggio');
-}
+        document.getElementById('risultato').innerHTML = result;
+    }
+)
+
+// risultati in html
+
+document.getElementById('giocatore').innerHTML = userNumber;
+document.getElementById('computer').innerHTML = computerNumber;

@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 40px;
+    text-decoration: none;
+    color: #fff;
+    background: #ccc;
+    border-radius: 20px;  
+}
