@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dadi JS</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- common-styles CSS -->
+    <link rel="stylesheet" href="styles/common_styles.css">
+    <!-- dice CSS -->
+    <link rel="stylesheet" href="styles/dice.css">
 </head>
 <body>
 
-    <div>
-        <h2 id="giocatore"></h2>
-        <h2 id="computer"></h2>
-        <h2 id="risultato"></h2>
-    </div>
-
-    <button type="button" id="dadi" class="btn">Tira i dadi</button>
-
-    <a href="index.html" class="btn">Vai alla Ricerca Utente</a>
+    <section class="container">
+        <div class="wrapper">
+            <div class="box">
+                <h2 class="title">Gioco dei dadi</h2>
+                <i class="fas fa-dice"></i>
+                <h3>Giocatore</h3>
+                <h2 id="giocatore" class="result"></h2>
+                <h3>Computer</h3>
+                <h2 id="computer" class="result"></h2>
+                <h3>Risultato</h3>
+                <h4 id="risultato" class="result"></h4>
+                <button type="button" id="dadi" class="btn btn-dice">Tira i dadi</button>
+                <div>
+                    <a href="index.html" class="btn login">Email Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Main JS -->
     <script src="script/dice.js"></script>

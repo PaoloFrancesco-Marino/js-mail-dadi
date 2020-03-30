@@ -19,11 +19,11 @@ dadi.addEventListener('click',
 
         if (userNumber > computerNumber) {
             console.log('Ha vinto il Giocatore');
-            result = 'Ha vinto il Giocatore';
+            result = 'Hai Vinto';
         
         } else if (userNumber < computerNumber) {
             console.log('Ha vinto il Computer');
-            result = 'Ha vinto il Computer';
+            result = 'Hai Perso';
         
         } else {
             console.log('Pareggio');

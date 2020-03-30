@@ -1,0 +1,43 @@
+.box {
+    min-height: 380px;
+}
+
+.box .title {
+    width: 250px;
+}
+
+.box i {
+    margin-top: 20px;
+    color: #f55b77;
+    font-size: 30px;
+}
+
+.box h2,
+.box h4 {
+    color: #725dbc;;
+}
+
+.box h3 {
+    margin: 5px 0;
+    color: #f55b77;
+}
+
+.result {
+    margin: 0 auto;
+}
+
+.login {
+    width: 250px;
+}
+
+.btn-dice {
+    background: linear-gradient(90deg, #fec530, #fd8139);
+    border: none;
+    outline: none;
+}
+
+.btn-dice:active {
+    position: relative;
+    top: 2px;
+}
+
